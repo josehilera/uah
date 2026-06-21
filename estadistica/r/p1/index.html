@@ -937,6 +937,11 @@ Error: object 'x' not found
                     Temp\RtmpKitiHU\downloaded_packages
                 </samp>
 
+                 <p>Se recomienda que, para que no se instale un paquete ya instalado, se utilice install dentro de una estructura if.</p>
+                <samp>
+                    > if (!require("toOrdinal")) install.packages("toOrdinal")<br>
+                </samp>
+
                 <p>A continuación, se ejecuta library:</p>
 
                 <samp>
@@ -975,6 +980,15 @@ Error: object 'x' not found
 Removing package from ‘C:/Users/JoseR/AppData/Local/R/win-library/4.2’<br>
 (as ‘lib’ is unspecified)<br>
 </code>
+
+<code>
+> remove.packages("toOrdinal")<br>
+Removing package from ‘C:/Users/JoseR/AppData/Local/R/win-library/4.2’<br>
+(as ‘lib’ is unspecified)<br>
+</code>
+
+</p>
+
 
                 <h4 id="4.4.3">4.4.3 Creación de funciones propias</h4>
 
