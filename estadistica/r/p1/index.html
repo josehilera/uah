@@ -18,7 +18,7 @@
 
 <body>
     <h1>Práctica 1. Introducción a R y RStudio</h1>
-    <p class="autor"><a href="https://www.uah.es/es/estudios/profesor/Jose-Ramon-Hilera-Gonzalez/">José R. Hilera</a>, 22/07/2025 <a href="https://creativecommons.org/licenses/by/4.0/deed.es">CC-BY</a></p>
+    <p class="autor"><a href="https://www.uah.es/es/estudios/profesor/Jose-Ramon-Hilera-Gonzalez/">José R. Hilera</a>, 23/06/2026 <a href="https://creativecommons.org/licenses/by/4.0/deed.es">CC-BY</a></p>
     <nav>
         <ul>    
             <li><a href="#1">1 Introducción</a></li>
@@ -937,11 +937,6 @@ Error: object 'x' not found
                     Temp\RtmpKitiHU\downloaded_packages
                 </samp>
 
-                 <p>Se recomienda que, para que no se instale un paquete ya instalado, se utilice install dentro de una estructura if.</p>
-                <samp>
-                    > if (!require("toOrdinal")) install.packages("toOrdinal")<br>
-                </samp>
-
                 <p>A continuación, se ejecuta library:</p>
 
                 <samp>
@@ -981,14 +976,10 @@ Removing package from ‘C:/Users/JoseR/AppData/Local/R/win-library/4.2’<br>
 (as ‘lib’ is unspecified)<br>
 </code>
 
-<code>
-> remove.packages("toOrdinal")<br>
-Removing package from ‘C:/Users/JoseR/AppData/Local/R/win-library/4.2’<br>
-(as ‘lib’ is unspecified)<br>
-</code>
-
-</p>
-
+<p>NOTA: Se recomienda que, para que no se instale un paquete ya instalado, se utilice install dentro de una estructura if.</p>
+   <samp>
+    > if (!require("toOrdinal")) install.packages("toOrdinal")<br>
+   </samp>
 
                 <h4 id="4.4.3">4.4.3 Creación de funciones propias</h4>
 
